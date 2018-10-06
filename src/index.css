@@ -12,3 +12,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+#Search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  pointer-events: none;
+}
+
+#Search input {
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  background: white;
+  border: 0;
+  border: 2px solid rgba(148, 148, 148, 0.3);
+  border-radius: 37px;
+  padding: 0 0.5rem;
+  height: 2rem;
+  width: 20%;
+  pointer-events: auto;
+  transition: border 0.25s ease, width 0.125s ease 0.125s;
+  outline: none;
+  appearance: none;
+}
+
+#Search input:focus {
+  border: 2px solid #006dac;
+  width: 30%;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #d3b300;}
